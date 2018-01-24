@@ -1,8 +1,8 @@
 char data = 0;
-boolean  bln1;
-boolean  bln2;
-boolean  bln3;
-boolean  bln4;
+boolean  bln9;
+boolean  bln10;
+boolean  bln11;
+boolean  bln12;
 int pin9 = 9;
 int pin10 = 10;
 int pin11 = 11;
@@ -26,22 +26,22 @@ void loop() {
     Serial.print(data);
     if (data == '4') {    //Main Light Upstairs
 
-      bln1 = !bln1;
-             digitalWrite(pin9, bln1);
+      bln9 = !bln9;
+             digitalWrite(pin9, bln9);
     }
     else if (data == '3') {   //Light Upstairs
-      bln2 = !bln2;
-             digitalWrite(pin10, bln2);
+      bln10 = !bln10;
+             digitalWrite(pin10, bln10);
 
     }
      else if (data == '2') {  //Light Downstairs
-      bln3 = !bln3;
-             digitalWrite(pin11, bln3);
+      bln11 = !bln11;
+             digitalWrite(pin11, bln11);
 
     }
      else if (data == '1') {    //Fan Upstairs
-      bln4 = !bln4;
-             digitalWrite(pin12, bln4);
+      bln12 = !bln12;
+             digitalWrite(pin12, bln12);
 
     }
 
